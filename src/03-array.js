@@ -14,8 +14,11 @@
  * console.log(numbers); // [5]
  */
 function returnNumbers(start, finish) {
-
+    return Array.from({ length: finish - start + 1 },
+        (_, index) => start + index) ;
 }
+
+
 
 
 /**
@@ -30,7 +33,10 @@ function returnNumbers(start, finish) {
  */
 
 function sumArray(array) {
-
+let sumArray= 0;
+    for (let i = 0; i < array.length; i++)
+    sumArray += array[i]
+    return sumArray;
 }
 
 /**
@@ -45,5 +51,5 @@ function sumArray(array) {
  * const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
  */
 function pushElement(arr, elem) {
-    
+
 }

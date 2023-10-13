@@ -10,9 +10,8 @@
  */
 
 function isEven(number) {
-    
-}
-
+    return number% 2 === 0
+};
 /**
  * This function checks if a number is within a range.
  *
@@ -27,8 +26,17 @@ function isEven(number) {
  */
 
 function isWithinRange(n, min, max) {
-
+    if (n >= min && n <= max) {
+        return true
+    } else {
+        return false
+    }
 }
+const inRange = isWithinRange(5,1,10)
+
+
+
+
 
 /**
  * This function checks if a string contains the string "ba"
@@ -44,7 +52,11 @@ function isWithinRange(n, min, max) {
 
 function stringContainsBa(string) {
 
+
 }
+
+
+
 
 
 
